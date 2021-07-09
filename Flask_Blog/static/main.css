@@ -1,0 +1,60 @@
+.navbar{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+.page_heading{
+  text-align: center;
+  color: brown;
+  margin: 20px 0;
+}
+.navbar a{
+  color:white;
+  text-decoration: none;
+}
+.pageWrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+footer{
+  background-color: #666 ;
+  height: 150px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.productViewWrapper{
+  display: flex;
+  margin: 20px;
+}
+.productView{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+}
+.productView img{
+  width: 200px;
+  height: 200px;
+}
+.footerSection{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+.footerSection div{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.footerSection div a{
+  color: white;
+  text-decoration: none;
+}

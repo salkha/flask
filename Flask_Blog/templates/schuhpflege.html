@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+    {% block content %}
+        <h1 class="page_heading"> This is a Schuepflege Page</h1>
+        <div class="productViewWrapper">
+            {% for schuhPflegeKollektion in schuhPflegeKollektion %}
+                <div class="productView">
+                    <h2> {{ schuhPflegeKollektion.productName }}</h2>
+                    <img src="{{ schuhPflegeKollektion.imageLink }}" alt="">
+                    <p>{{ schuhPflegeKollektion.price }}</p>
+                </div> 
+            {% endfor %}
+        </div>
+    {% endblock content %}

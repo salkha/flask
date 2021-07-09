@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+    {% block content  %}
+ 
+            <h1 class="page_heading"> This is a Schuhe Page</h1>
+            <div class="productViewWrapper">
+                {% for schueKollektion in schueKollektion %}
+
+                    <div class="productView">
+                        <h2> {{ schueKollektion.productName }}</h2>
+                        <img src="{{ schueKollektion.imageLink }}" alt="">
+                        <p>{{ schueKollektion.price }}</p>
+                    </div>    
+
+                {% endfor %}
+            </div>
+        
+    {% endblock content %}
